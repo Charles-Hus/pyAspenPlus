@@ -24,8 +24,9 @@ class Distillation:
 
     @check_name(Type='block')
     def setNStage(self, bname, set_value):
-        """Get the number of stage for the specified RadFrac block.
+        """Set the number of stage for the specified RadFrac block.
                 bname: Block name.
+                set_value: the number of stage for this Block
         """
         ## 檢查輸入的資料型態正確與否
         if type(set_value) != int:
